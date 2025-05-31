@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dos Secciones: Promedios y Collatz</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <script src="Collatz.js"></script>
+    <script src="Funciones.js"></script>
+    <script src="Tiempo.js"></script>
+</head>
+
+<body>
+
+    <!-- SECCIÓN 1: CALCULADORA DE PROMEDIOS -->
+    <section class="seccion" id="promedios">
+        <h2>Calculadora de Promedios</h2>
+        <label>Ingrese una calificación (0 a 10):</label><br>
+        <input type="number" id="nota" min="0" max="10"><br><br>
+        <button onclick="agregarNota()">Agregar Nota</button>
+        <button onclick="calcularPromedio()">Calcular Promedio</button>
+
+        <h3>Notas:</h3>
+        <div id="listaNotas"></div>
+
+        <h3>Promedio:</h3>
+        <p id="promedio"></p>
+    </section>
+
+    <hr>
+    <!---Seccion 2 Contador-->
+
+   <section class="contador-palabras" id="contadorPalabras">
+  <h2>Contador de Palabras</h2>
+
+  <textarea id="texto" rows="5" cols="40" placeholder="Escribe aquí tu texto..."></textarea><br><br>
+
+  <button onclick="contarPalabras()">Contar Palabras</button>
+
+  <p id="resultadoPalabras"></p>
+</section>
+    <hr>
+
+    <!---Seccion 3 Conjetura-->
+    <section class="collatz-seccion" id="collatz">
+        <h2>Conjetura de Collatz</h2>
+        <label for="numberInput">Ingresa un número entero positivo:</label><br>
+        <input type="number" id="numberInput" min="1" /><br><br>
+        <button onclick="calcularCollatz()">Calcular Serie</button>
+
+        <ul id="result"></ul>
+    </section>
